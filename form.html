@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Seed Recovery</title></head>
+<body>
+    <h1>Enter 12-word Seed Phrase</h1>
+    <form method="post">
+        <textarea name="seed_phrase" rows="4" cols="50" required></textarea><br><br>
+        <button type="submit">Recover</button>
+    </form>
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>
